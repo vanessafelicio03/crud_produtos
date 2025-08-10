@@ -22,7 +22,7 @@ class ProdutoController extends Controller
     {
         $request->validate([
             'nome' => 'required|string|max:255',
-            'descricao' => 'nullable|string',
+            'descricao' => 'string',
             'preco' => 'required|numeric|min:0',
         ]);
 
@@ -44,7 +44,7 @@ class ProdutoController extends Controller
     {
         $request->validate([
             'nome' => 'required|string|max:255',
-            'descricao' => 'nullable|string',
+            'descricao' => 'string',
             'preco' => 'required|numeric|min:0',
         ]);
 
