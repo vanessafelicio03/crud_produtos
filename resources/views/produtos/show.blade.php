@@ -8,6 +8,8 @@
             <p><strong>Nome:</strong> {{ $produto->nome }}</p>
             <p><strong>Descrição:</strong> {{ $produto->descricao }}</p>
             <p><strong>Preço:</strong> {{ number_format($produto->preco, 2, ',', '.') }}</p>
+            <p><strong>Criado em:</strong> {{ $produto->created_at->format('d/m/Y H:i') }}</p>
+            <p><strong>Atualizado em:</strong> {{ $produto->updated_at->format('d/m/Y H:i') }}</p>
             <a href="{{ route('produtos.index') }}" class="mt-4 inline-block bg-gray-500 text-white px-4 py-2 rounded">Voltar à Lista</a>
         </div>
     </div>
